@@ -1,22 +1,24 @@
-color c = color(75);
 float fps = 60;
+PImage bg;
 
 Cube cube;
 Rotation R;
 
 void setup() {
-  size(800, 800, P3D);
+  size(1280, 662, P3D);
   frameRate(fps);
   pixelDensity(displayDensity());
   smooth();
-  background(c);
+  
+  bg = loadImage("imgs/bg.jpg");
+  background(bg);
 
   cube = new Cube(100);
   R = new Rotation(1.5);
 }
 
 void draw() {
-  background(c);
+  background(bg);
 
   cube.show();
 
