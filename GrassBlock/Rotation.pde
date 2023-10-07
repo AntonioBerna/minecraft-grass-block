@@ -11,8 +11,8 @@ class Rotation {
   }
   
   float[][] xT() {
-    float[][] x = {{1, 0, 0}, {0, cos(theta), sin(theta)}, {0, -sin(theta), cos(theta)}};
-    return x;
+    float[][] xT = {{1, 0, 0}, {0, cos(theta), sin(theta)}, {0, -sin(theta), cos(theta)}};
+    return xT;
   }
 
   float[][] y() {
@@ -21,8 +21,8 @@ class Rotation {
   }
   
   float[][] yT() {
-    float[][] y = {{cos(theta), 0, -sin(theta)}, {0, 1, 0}, {sin(theta), 0, cos(theta)}};
-    return y;
+    float[][] yT = {{cos(theta), 0, -sin(theta)}, {0, 1, 0}, {sin(theta), 0, cos(theta)}};
+    return yT;
   }
 
   float[][] z() {
@@ -31,7 +31,7 @@ class Rotation {
   }
   
   float[][] zT() {
-    float[][] z = {{cos(theta), sin(theta), 0}, {-sin(theta), cos(theta), 0}, {0, 0, 1}};
-    return z;
+    float[][] zT = {{cos(theta), sin(theta), 0}, {-sin(theta), cos(theta), 0}, {0, 0, 1}};
+    return zT;
   }
 }

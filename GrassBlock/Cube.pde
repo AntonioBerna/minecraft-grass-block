@@ -1,6 +1,5 @@
 class Cube {
   PImage lateralFaces, upFace, downFace;
-  float theta = radians(1);
   int totalPoints = 8;
   PVector[] points;
 
