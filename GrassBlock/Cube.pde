@@ -77,16 +77,16 @@ class Cube {
     vertex(points[3].x, points[3].y, points[3].z, 0, downFace.height);
     endShape(CLOSE);
   }
-
-  void applyRotation(float[][] R) {
+  
+  void applyRotoTranslation(float[][] T) {
     for (int i = 0; i < points.length; i++) {
       float x = points[i].x;
       float y = points[i].y;
       float z = points[i].z;
 
-      points[i].x = R[0][0] * x + R[0][1] * y + R[0][2] * z;
-      points[i].y = R[1][0] * x + R[1][1] * y + R[1][2] * z;
-      points[i].z = R[2][0] * x + R[2][1] * y + R[2][2] * z;
+      points[i].x = T[0][0] * x + T[0][1] * y + T[0][2] * z + T[0][3];
+      points[i].y = T[1][0] * x + T[1][1] * y + T[1][2] * z + T[1][3];
+      points[i].z = T[2][0] * x + T[2][1] * y + T[2][2] * z + T[2][3];
     }
   }
 }
