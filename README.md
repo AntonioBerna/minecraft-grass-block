@@ -5,4 +5,4 @@ Simple application of Minecraft style rotation matrices
     <img src="imgs/grass-block.png">
 </p>
 
-> **NOTE:** For more informations ![chick here](https://github.com/AntonioBerna/minecraft-grass-block/theory.pdf).
+> **NOTE:** For more information [click here](https://github.com/AntonioBerna/minecraft-grass-block/theory/theory.pdf).
